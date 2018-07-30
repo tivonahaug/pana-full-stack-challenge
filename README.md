@@ -1,4 +1,4 @@
-Pana Full Stack Code Challenge
+Pana Full-Stack Code Challenge
 --------------------
 
 ### The Challenge
@@ -23,6 +23,7 @@ Using the included API server and your code wizardry, the goal is to implement a
   - [Implement Time-Based Filtering](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/flight_times_filter.png)
   - Make it mobile friendly! (We didn't provide any mocks for this, so use your imagination!)
   - A check-out page. (Again, no mocks, but we're curious what you would include.)
+  - There's no security, so anyone can use your new app! Try to implement some sort of authentication or authorization.
 
 ### Evaluation
   - **CSS**
