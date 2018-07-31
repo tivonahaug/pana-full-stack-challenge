@@ -14,8 +14,8 @@ Using the included API server and your code wizardry, the goal is to implement a
     - [Flight Search Design](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/flight_search.png)
   - Implement filtering and sorting
     - [Layover Filter Dropdown](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/stops_filter.png)
-    - [Sort By Dropdown 1](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/sort_by.png)
-    - [Sort By Dropdown 2](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/sort_by_2.png)
+    - [Sort By Dropdown (Mockup 1)](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/sort_by.png)
+    - [Sort By Dropdown (Mockup 2)](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/sort_by_2.png)
   - Use Backbone/Marionette or another frontend JS framework
     - We have provided a boilerplate Backbone/Marionette project in the client directory (see *installation* below), however if you would like to build your own from scratch or use a different framework (React, Vue, Angular, or even vanilla JS), you're more than welcome to. We'll be judging on your ability to take designs, specifications, and data to create something usable, not your knowledge of Backbone and Marionette.
 #### Extra Credit
