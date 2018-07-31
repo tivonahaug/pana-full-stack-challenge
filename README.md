@@ -1,28 +1,30 @@
-Pana Full Stack Code Challenge
+Pana Full-Stack Code Challenge
 --------------------
 
 ### The Challenge
 Using the included API server and your code wizardry, the goal is to implement a sample front-end for one of our newest products, **Pana Flight Search**, using Backbone/Marionette (_or another similar framework_). Based on the provided screenshots, you will need to implement the basic layout including sorting and filtering.
 
 ### Requirements
-##### Core Requirements
+#### Core Requirements
   - Query the API (and handle loading/erroring eloquently)
     - Your frontend should make a call to the provide API to query search results. For simplicity, the results will always be the same.
-    - The API has a throttled api connection, so it could take 1 second or 10 seconds to return results.
+    - The API has a throttled api connection, so it could take 1 second or 4 seconds to return results.
     - The API has a random chance of failing (returning 500), make sure you handle any error states eloquently.
   - Display the data according to the mocks
     - [Flight Search Design](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/flight_search.png)
   - Implement filtering and sorting
     - [Layover Filter Dropdown](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/stops_filter.png)
-    - [Airlines Filter Dropdown](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/airlines_filter.png)
     - [Sort by Dropdown 1](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/sort_by.png)
     - [Sort by Dropdown 2](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/sort_by_2.png)
   - Use Backbone/Marionette or another frontend JS framework
     - We have provided a boilerplate Backbone/Marionette project in the client directory (see *installation* below), however if you would like to build your own from scratch or use a different framework (React, Vue, Angular, or even vanilla JS), you're more than welcome to. We'll be judging on your ability to take designs, specifications, and data to create something usable, not your knowledge of Backbone and Marionette.
-##### Extra Credit
+#### Extra Credit
+  - To meet the core requirements of this project, you only need to develop the UI for selecting the first "leg" of the flight (a round-trip flight has an outbound and a return "leg"). There is an endpoint for fetching all available return flights for a given outbound flight. You can try implementing selection of both the outbound and then the return.
+  - [Implement Airline Filtering](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/airlines_filter.png)
   - [Implement Time-Based Filtering](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/flight_times_filter.png)
   - Make it mobile friendly! (We didn't provide any mocks for this, so use your imagination!)
   - A check-out page. (Again, no mocks, but we're curious what you would include.)
+  - There's no security, so anyone can use your new app! Try to implement some sort of authentication or authorization.
 
 ### Evaluation
   - **CSS**
