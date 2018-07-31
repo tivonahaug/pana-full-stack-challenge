@@ -63,7 +63,9 @@ Using the included API server and your code wizardry, the goal is to implement a
 - **Grid System** - We've included a grid system library that is very similar to our internally built grid library. Documentation can be found at `http://flexboxgrid.com/`.
 
 ### Submission
-When you're finished, zip the directory (excluding the node_modules) and email it to engineers@pana.com. Please do not create a public repository with your solution, as we'd like to discourage others from using your code. 😁
+When you're finished, zip the directory (excluding the node_modules) and email it to devon@pana.com. Please do not create a public repository with your solution, as we'd like to discourage others from using your code. 😁 
+
+With your submission, please include the approximate number of hours you spent working on this. Additionally, if you have any feedback for us about how the process went, we'd love to hear it! We're always looking to imrpove.
 
 ### Find a bug?
 Bugs are a great way to earn bonus points! You can either create a Pull Request with a suggested fix or email engineers@pana.com with the bug, a suggested fix, and the subject line `Code Challenge Bug Report`.
