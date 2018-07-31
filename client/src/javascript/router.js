@@ -1,5 +1,5 @@
 import ExampleLayout from './views/example/layout';
-import NotFound from 'views/not_found/layout'
+import NotFound from 'views/not_found/layout';
 
 export default Marionette.AppRouter.extend({
   routes: {
