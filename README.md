@@ -19,7 +19,7 @@ Using the included API server and your code wizardry, the goal is to implement a
   - Use Backbone/Marionette or another frontend JS framework
     - We have provided a boilerplate Backbone/Marionette project in the client directory (see *installation* below), however, if you would like to use a different framework (React, Vue, Angular, or even vanilla JS), you're more than welcome to. We'll be judging on your ability to take designs, specifications, and data to create something usable—not your knowledge of Backbone and Marionette.
 #### Extra Credit
-  - To meet the core requirements of this project, you only need to develop the UI for selecting the first "leg" of the flight (a round-trip flight has an outbound and a return "leg"). There is an endpoint for fetching all available return flights for a given outbound flight. You can try implementing selection of both the outbound and then the return.
+  - To meet the core requirements of this project, you only need to develop the UI for selecting the first "leg" of the flight (a round-trip flight has an outbound and a return "leg"). There is an endpoint for fetching all available return flights for a given outbound flight. You can try implementing selection of first the outbound and then the return.
   - [Implement Airline Filtering](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/airlines_filter.png)
   - [Implement Time-Based Filtering](https://github.com/tivonahaug/pana-full-stack-challenge/blob/master/mocks/flight_times_filter.png)
   - Make it mobile friendly! (We didn't provide any mocks for this, so use your imagination!)
