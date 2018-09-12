@@ -1,4 +1,5 @@
 const app = require('express')();
+const cors = require('cors')
 const PORT = 4000;
 
 // Private Helpers
@@ -22,6 +23,8 @@ const simluateError = () => {
 			: reject(new Error('Server Error'));
 	});
 };
+
+app.use(cors());
 
 // Mock API
 app.use((req, res, next) => {
