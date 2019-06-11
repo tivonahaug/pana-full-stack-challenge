@@ -1,12 +1,14 @@
+const serverUrl = 'http://localhost:4000';
+
 export const Model = Backbone.Model.extend({
-  serverUrl: `${$('html').data('server-url')}`,
+  serverUrl,
 });
 
 export const Collection = Backbone.Collection.extend({
-  serverUrl: `${$('html').data('server-url')}`,
+  serverUrl,
 });
 
 export default {
   Model: Model,
   Collection: Collection,
-}
+};
