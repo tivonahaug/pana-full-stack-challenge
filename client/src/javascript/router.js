@@ -1,18 +1,34 @@
-import ExampleLayout from './views/example/layout';
+import HeaderView from './views/components/header';
+import InsructionsLayout from './views/instructions/layout';
+import SearchLayout from './views/search/layout';
 import NotFound from 'views/not_found/layout';
 
 export default Marionette.AppRouter.extend({
   routes: {
-    "": "search",
-    "*notFound" : "notFound",
+    '': 'root',
+    instructions: 'instructions',
+    search: 'search',
+    '*notFound': 'notFound',
   },
 
-  search: function() {
-    PanaClient.mainRegion.show(new ExampleLayout());
+  root() {
+    PanaClient.router.navigate('/instructions', { trigger: true });
   },
 
-  notFound: function() {
-    PanaClient.mainRegion.show(new NotFound());
+  instructions() {
+    this._renderView(InsructionsLayout);
   },
 
+  search() {
+    this._renderView(SearchLayout);
+  },
+
+  notFound() {
+    this._renderView(NotFound);
+  },
+
+  _renderView(View, options) {
+    PanaClient.headerRegion.show(new HeaderView());
+    PanaClient.mainRegion.show(new View(options));
+  },
 });

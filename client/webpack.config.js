@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  devtool: 'eval',
+  devtool: 'eval-source-map',
   entry: ['./src/javascript/app.js', './src/styles/app.sass'],
   output: {
     path: path.resolve(__dirname, 'build'),

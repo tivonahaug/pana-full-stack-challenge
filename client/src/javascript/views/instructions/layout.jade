@@ -1,0 +1,94 @@
+.container-fluid
+  .row
+    .col-xs-12.m-b-3
+      .center-xs
+        h2 #{title}
+    .col-xs-12.m-b-3
+      h3 The Challenge
+      b Using the included API server and your code wizardry, the goal is to implement a sample front-end of one of our products, Pana Flight Search.
+      p During this challenge you will work through several milestones that have increasing difficulty.
+        |  Each milestone will test a different part of your knowledge of frontend and backend Javascript.
+        |  We've built out the basic scaffolding for you, however there may be times throughout the challenge
+        | where you run into bugs and tpyos - it is up to you to fix those bugs to progress to the next milestone.
+
+    .col-xs-12.m-b-3
+      h3 The Milestones
+      ol
+        li
+          h4 Fetch and Parse
+          ul
+            li Fetch flight data from the backend and parse it so that the
+              code FlightSearchModel
+              | only contains the outbound (first) flight.
+        li
+          h4 Implement Pagination
+          ul
+            li Paginate the results so that only the first 30 results are displaying in the list
+            li Pagination should be implemented on the front-end using the keys
+              code currentPage
+              code fullResults
+              | and
+              code paginatedResults
+            li
+              code paginatedResults
+              | is the collection that gets rendered in the list view.
+            li You don't need to implement any buttons to switch pages, always rendering the first page of
+              code paginatedResults
+              | is fine.
+        li
+          h4 Display the Data
+          ul
+            li The basic layout is already built out for each flight, you'll just need to finish up a few of the "Placeholder" sections
+            li Refer to the mock located at
+              code mocks/flight_search.png
+              | to see an example of the final outcome.
+        li
+          h4 Implement Sorting
+          ul
+            li Implement the `Sort By TODO` dropdown
+            li You should sort by Best (score), Price (low), Price, (high), Duration (shortest to longest)
+            li Implementation can be on the backend or the front-end
+        li
+          h4 Implement Airlines Filtering
+          ul
+            li Each airline should show up as a item in the dropdown
+            li Clicking on an airline item in the dropdown should
+              b  1)
+              span  highlight that item and
+              b  2)
+              span  only show results for that airline
+            li If the airline is already "active", then clicking on the item should remove that filter
+            li Implementation can be on the backend or the front-end
+
+    .col-xs-12.m-b-3
+      h4 Extra Credit
+      ol
+        li
+          h4 Create Loading and Error States
+          ul
+            li The API has a throttled api connection simulating a real flight search.
+            li It could anywhere between 1 to 4 seconds to return results.
+            li There is also a random chance that the server will return 500, so handle any error states eloquently.
+        li
+          h4 Return Flights
+          ul
+            li There is an endpoint for fetching all available return flights for a given outbound flight. You can try implementing selection of first the outbound and then the return.
+            li Your goal here will be to track state of selected flights, display any selected flights, allow a user to select a return flight, and display the final set of flights
+        li
+          h4 Mobile
+          ul
+            li Make it mobile friendly!
+            li We didn't provide any mocks for this, so use your imagination
+        li
+          h4 Build a Check-Out Page
+          ul
+            li Again, no mocks, but we're curious what you would include.
+        li
+          h4 Implement Security
+          ul
+            li Anyone can use your app right now...
+            li Try to implement some sort of authentication or authorization
+
+
+
+

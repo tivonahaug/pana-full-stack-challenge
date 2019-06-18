@@ -1,0 +1,31 @@
+.drop-element, .drop-element:after, .drop-element:before, .drop-element *, .drop-element *:after, .drop-element *:before
+  box-sizing: border-box
+
+.drop-element
+  position: absolute
+  display: none
+  max-width: 100%
+  max-height: 100%
+  z-index: 1000
+  &.drop-open
+    display: block
+  .drop-content
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.45)
+    border-radius: $border-radius
+    background: white
+    max-height: ms(15)
+    overflow: scroll
+    li.drop-content-item
+      padding: 0.3em 1em
+      &:hover
+        background: lighten($primary, 30%)
+      &.drop-content--active
+        background: $primary
+        color: $white
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+    li
+      cursor: pointer
+      margin-bottom: 0
