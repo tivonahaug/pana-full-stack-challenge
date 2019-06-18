@@ -2,7 +2,7 @@
 
 ### The Challenge
 
-Using the included API server and your code wizardry, the goal is to implement a sample front-end for one of our products, **Pana Flight Search**, using Backbone/Marionette (_or another similar framework_). Based on the provided screenshots, you will need to implement the basic layout including sorting and filtering.
+Using the included API server and your code wizardry, the goal is to implement a sample front-end for one of our products, **Pana Flight Search**, using Backbone/Marionette (_or another similar framework_).
 
 ### Requirements
 
