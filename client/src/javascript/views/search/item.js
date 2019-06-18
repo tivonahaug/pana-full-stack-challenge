@@ -4,12 +4,12 @@ export default Marionette.ItemView.extend({
   initialize() {},
 
   templateHelpers() {
-    const primarySegment = this.model.get('segmentArray');
+    const firstSegment = this.model.get('segmentArray');
     return {
-      airlineUrl: primarySegment.airlineUrl,
-      seatsRemaining: primarySegment.flights[0].seatsRemaining,
-      fromAirport: primarySegment.from,
-      toAirport: primarySegment.to,
+      airlineUrl: firstSegment.airlineUrl,
+      seatsRemaining: firstSegment.flights[0].seatsRemaining,
+      fromAirport: firstSegment.from,
+      toAirport: firstSegment.to,
       flightClass: this.model.get('class'),
       price: Math.round(this.model.get('price')),
     };
