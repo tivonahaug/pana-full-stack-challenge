@@ -7,7 +7,11 @@ export default Marionette.CompositeView.extend({
   initialize(options) {
     this.flightSearch = options.flightSearch;
     this.collection = this.flightSearch.get('paginatedResults');
-    this.listenTo(this.flightSearch, 'change:paginatedResults', this.render);
+    this.listenTo(
+      this.flightSearch.get('paginatedResults'),
+      'change',
+      this.render
+    );
     this.flightSearch.search();
   },
 });
