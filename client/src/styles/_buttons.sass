@@ -1,0 +1,92 @@
+$border-width: 1px
+
+@mixin btn-shadow
+  box-shadow: 0 1px 1px darken($white, 30%)
+
+@mixin btn-size($size: md)
+  @if $size == sm
+    &, *
+      font-size: 0.85em
+    padding: 5px 8px
+  @else if $size == lg
+    &, *
+      font-size: 1em
+    line-height: 1.5em
+    padding: 0 24px
+  @else
+    &, *
+      font-size: 1em
+    line-height: 1em
+    padding: 10px 14px
+
+@mixin btn-color($color: $primary, $outlined: false, $text-color: $white)
+  border: $border-width solid $color
+  @if $outlined
+    .btn__icon
+      fill: $color
+    &, *
+      color: $color
+      &:hover, &:active
+        color: $color
+    &:hover, &:active
+      background: rgba($color, 0.10)
+  @else
+    color: $text-color
+    background: $color
+    .btn__icon
+      fill: white
+    &:hover
+      color: $text-color
+    &.btn-hidden
+      opacity: 0.0
+      pointer-events: none
+    &.btn-disabled
+      opacity: 0.4
+      cursor: not-allowed
+      pointer-events: none
+    &:not(.btn-disabled):hover, &:not(.btn-disabled):active
+      background: darken($color, 5%)
+      border-color: darken($color, 5%)
+
+@mixin btn($color: $primary, $size: md, $outlined: false, $text-color: $white)
+  +btn-color($color, $outlined, $text-color)
+  +btn-size($size)
+  +btn-shadow
+  width: auto
+  text-align: center
+  font-weight: 500
+  text-decoration: none
+  transition: all 0.30s
+  border-radius: $border-radius
+  cursor: pointer
+  box-sizing: border-box
+  outline: none
+  user-select: none
+  display: inline-block
+
+.btn
+  +btn()
+
+.btn--sm
+  +btn-size(sm)
+
+.btn--lg
+  +btn-size(lg)
+
+.btn-group
+  +btn-shadow
+  border-radius: $border-radius
+  overflow: hidden
+  display: inline-block
+  width: auto
+  .btn + .btn
+    border-left: $border-width solid rgba(0, 0, 0, 0.1)
+  > *,
+  .btn,
+  .btn-outlined
+    display: inline-block
+    box-shadow: none
+    border-radius: 0
+    margin: 0
+    &:not(:last-child)
+      border-right: none

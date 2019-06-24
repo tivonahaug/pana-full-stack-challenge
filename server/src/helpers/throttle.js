@@ -1,7 +1,7 @@
 // Private Helpers
-const ERROR_CHANCE = 0.05;
+const ERROR_CHANCE = 0;
 const THROTTLE_LOW = 0; // Seconds
-const THROTTLE_HIGH = 4; // Seconds
+const THROTTLE_HIGH = 1; // Seconds
 
 const getRandomBetween = (low, high) =>
   Math.floor(Math.random() * (high * 1000)) + low;

@@ -3,6 +3,7 @@ import ItemView from './item';
 export default Marionette.CompositeView.extend({
   template: require('./list.jade'),
   childView: ItemView,
+  childViewContainer: '.js-list',
   className: 'search-results--wrapper',
   initialize(options) {
     this.flightSearch = options.flightSearch;

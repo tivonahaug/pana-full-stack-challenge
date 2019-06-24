@@ -9,6 +9,16 @@ export default Marionette.LayoutView.extend({
     resultsRegion: '.js-results-region',
   },
 
+  ui: {
+    nextPageButton: '.js-next-page',
+    previousPageButton: '.js-previous-page',
+  },
+
+  events: {
+    'click @ui.nextPageButton': 'handleNextPage',
+    'click @ui.previousPageButton': 'handlePreviousPage',
+  },
+
   initialize() {
     this.flightSearch = new FlightSearch();
   },
@@ -33,4 +43,7 @@ export default Marionette.LayoutView.extend({
       })
     );
   },
+
+  handleNextPage() {},
+  handlePreviousPage() {},
 });

@@ -1,13 +1,19 @@
 import { Model, Collection } from 'models/default';
 
-export const FlightSearchModel = Model.extend({});
+export const FlightSearchModel = Model.extend({
+  parse(flight) {
+    if (Array.isArray(flight) && flight.length) {
+      return flight[0];
+    }
+    return flight;
+  },
+});
 
 export const FlightSearchCollection = Collection.extend({
   model: FlightSearchModel,
 
-  // Documentation: https://backbonejs.org/#Collection-parse
-  parse(flights) {
-    return flights;
+  url() {
+    return `${this.serverUrl}/flights`;
   },
 });
 
@@ -30,7 +36,8 @@ export const FlightSearch = Model.extend({
   },
 
   setPaginatedResults() {
-    const paginatedResults = this.get('fullResults');
-    this.get('paginatedResults').reset(paginatedResults.models);
+    const fullResults = this.get('fullResults');
+    const paginatedResults = fullResults.slice(0, 5);
+    this.get('paginatedResults').reset(paginatedResults);
   },
 });
