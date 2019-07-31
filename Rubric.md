@@ -30,7 +30,7 @@ Rate this person's curiosity about the coding challenge.  Do they try to get a d
 
 5. Communication/Collaboration
 
-How does this person communicate during the process?  Do they talk you through their thought process and ask pointed, insightful questions or are they mostly silent?  If you push back on a particular implementation strategy do they get defensive/blindly agree, or do they engage with you?  A 1 here will fail to talk through their thought process and stay silent when stuck, whereas a 5 will concisely elucidate as they code and freely engage the interview when stuck or are at a crossroads.
+How does this person communicate during the process?  Do they talk you through their thought process and ask pointed, insightful questions or are they mostly silent?  If you push back on a particular implementation strategy do they get defensive/blindly agree, or do they engage with you?  A 1 here will fail to talk through their thought process and stay silent when stuck, whereas a 5 will explain their thought process as they code and engage that interviewer when they are stuck.
 
 
 ## What Level Do We Assess This Engineer At 
