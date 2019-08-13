@@ -35,9 +35,11 @@ export const FlightSearch = Model.extend({
       .catch(console.error);
   },
 
-  setPaginatedResults() {
+  setPaginatedResults(a = 1) { 
+    var slice1 = (a *20) -20
+    var slice2 = a * 20
     const fullResults = this.get('fullResults');
-    const paginatedResults = fullResults.slice(0, 5);
+    const paginatedResults = fullResults.slice(slice1, slice2);
     this.get('paginatedResults').reset(paginatedResults);
   },
 });

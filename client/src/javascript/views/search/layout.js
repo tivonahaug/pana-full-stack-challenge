@@ -42,8 +42,17 @@ export default Marionette.LayoutView.extend({
         flightSearch: this.flightSearch,
       })
     );
+    console.log(this.flightSearch);
   },
 
-  handleNextPage() {},
-  handlePreviousPage() {},
+  // handleNextPage() {
+  //   if (this.flightsearch.currentPage != 'atEnd') {
+  //     this.flightSearch.set('currentPage', this.flightSearch.get('currentPage') + 1);
+  //   }
+  // },
+  // handlePreviousPage() { 
+  //   if (this.flightSearch.currentPage >= 2) {
+  //     this.flightSearch.set('currentPage', this.flightSearch.get('currentPage') - 1)
+  //   },
+  // },
 });
