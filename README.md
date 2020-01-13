@@ -20,6 +20,8 @@ Using the included API server and your code wizardry, the goal is to implement a
   - `$ npm install`
   - `$ npm start`
 
+Getting an error with the node sass module? See https://github.com/sass/node-sass/issues/2536
+
 #### Core Requirements
 
 - Work through this project according to the instructions located in `views/instructions/layout` (after installing and running the project, the instructions will be the first thing you see).
