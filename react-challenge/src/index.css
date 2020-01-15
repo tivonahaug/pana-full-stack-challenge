@@ -1,23 +1,106 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Open+Sans:400,700&display=swap');
 
 :root {
   --border-color: #eaeaea;
   --border-radius: 3px;
+  --primary-color: #1a96fc;
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  font-size-adjust: 0.5;
+  line-height: 1.5;
 }
 
 code {
   margin-left: 7px;
   margin-right: 7px;
-  background-color: rgba(29, 24, 24, 0.38);
+  background-color: #cccccc;
   padding: 4px;
   border-radius: var(--border-radius);
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Fira Code', monospace;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+a.hover {
+  opacity: 0.8;
+}
+
+p.small,
+span.small,
+b.small {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+strong,
+i,
+span,
+a,
+li {
+  margin: 10px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: 700;
+}
+
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111;
 }
 
 .pane {
