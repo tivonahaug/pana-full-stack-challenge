@@ -1,17 +1,12 @@
 import React from 'react';
+import Button from '../Button';
 
 export default function FlightSearchPagination() {
   return (
-    <div className="row">
-      <div className="col-xs-6">
-        <p className="m-t-0 m-b-0">Page Count: </p>
-      </div>
-      <div className="col-xs-6">
-        <div className="row end-xs">
-          <div className="btn btn--sm">Previous Page</div>
-          <div className="btn btn--sm">Next Page</div>
-        </div>
-      </div>
+    <div className="m-t-2 m-b-2 d-space-between full-width">
+      <Button size="sm">Previous Page</Button>
+      <p className="m-t-0 m-b-0">Page 0 of 0</p>
+      <Button size="sm">Next Page</Button>
     </div>
   );
 }

@@ -17,14 +17,14 @@
 }
 
 .search-results__filter-group .search-results__filter-item:hover {
-  background-color: blue;
-  border-radius: 3px;
+  background-color: var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 .search-result {
   display: flex;
   justify-content: flex-start;
-  border-bottom: solid 1px blue;
+  border-bottom: solid 1px var(--border-color);
   padding: 0.5em;
 }
 
@@ -37,7 +37,7 @@
   height: 2.8em;
   width: 2.8em;
   border: solid 1px blue;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }
 
 .search-results--section--large {

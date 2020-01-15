@@ -15,7 +15,7 @@ export default function FlightSearch() {
           <div className="pane-header search-results__header">
             <div className="search-results__title">
               <b>Select an outbound flight</b>
-              <p className="m-v-0 fade small">DEN -> CHI</p>
+              <p className="m-v-0 fade small">DEN → CHI</p>
             </div>
           </div>
           <FlightSearchList flights={paginatedFlights} />

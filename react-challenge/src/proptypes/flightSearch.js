@@ -1,11 +1,23 @@
 import PropTypes from 'prop-types';
 
 export const FlightSearchFlightPropType = PropTypes.shape({
-  aircraft: PropTypes.string,
-  airline: PropTypes.string.isRequired,
+  /**
+   * Start and End Date are the "real" flight date-times in the origin
+   * and destination's time zone and can be used to display what dates
+   * the traveler will be traveling
+   */
+  startDate: PropTypes.string.isRequired,
+  endDate: PropTypes.string.isRequired,
+
+  /**
+   * Arrives and departs at represent the dates in UTC
+   * and can be used to accurately calculate total flight time
+   */
   arrivesAt: PropTypes.string.isRequired,
   departsAt: PropTypes.string.isRequired,
-  endDate: PropTypes.string.isRequired,
+
+  aircraft: PropTypes.string,
+  airline: PropTypes.string.isRequired,
   fareClass: PropTypes.string.isRequired,
   flightNumber: PropTypes.string.isRequired,
   fromCity: PropTypes.string.isRequired,
@@ -19,7 +31,6 @@ export const FlightSearchFlightPropType = PropTypes.shape({
   operatingFlightNumber: PropTypes.string.isRequired,
   possiblePremiumUpgrade: PropTypes.bool.isRequired,
   seatsRemaining: PropTypes.number.isRequired,
-  startDate: PropTypes.string.isRequired,
   toCity: PropTypes.string.isRequired,
   toTimezone: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
