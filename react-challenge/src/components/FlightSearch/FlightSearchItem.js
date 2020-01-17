@@ -59,7 +59,7 @@ function FlightSearchItem({ flight }) {
     Array.isArray(flights) && flights.length === 1
       ? 'Nonstop'
       : flights.length === 2
-      ? `${flights.length - 1} Stop`
+      ? `1 Stop`
       : `${flights.length - 1} Stops`;
 
   return (
