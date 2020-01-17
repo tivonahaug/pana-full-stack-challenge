@@ -12,7 +12,7 @@ function FlightSearchText({ size = 'lg', children }) {
 }
 
 FlightSearchText.propTypes = {
-  size: PropTypes.oneOf(['sm', 'lg']).isRequired,
+  size: PropTypes.oneOf(['sm', 'lg']),
   children: PropTypes.node,
 };
 

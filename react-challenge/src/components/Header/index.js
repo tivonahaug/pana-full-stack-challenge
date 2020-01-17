@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './header.style.css';
 
 export default function Header() {
@@ -9,12 +9,22 @@ export default function Header() {
         <img src="/assets/logo-color.jpg" alt="" className="header-image" />
       </div>
       <div className="navigation-buttons">
-        <Link className="navigation-button" to="/">
+        <NavLink
+          exact={true}
+          activeClassName="navigation-button--active"
+          className="navigation-button"
+          to="/"
+        >
           Instructions
-        </Link>
-        <Link className="navigation-button" to="/search">
+        </NavLink>
+        <NavLink
+          exact={true}
+          activeClassName="navigation-button--active"
+          className="navigation-button"
+          to="/search"
+        >
           Challenge
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

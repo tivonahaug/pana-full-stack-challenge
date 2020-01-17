@@ -1,27 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './index.style.css';
 import useFetchFlightResults from './useFetchFlightResults';
-import FlightSearchList from './FlightSearchList';
-import FlightSearchPagination from './FlightSearchPagination';
+import FilterContext from './filters/FilterContext';
+import FlightSearch from './FlightSearch';
+import useFlightSearchFilters from './filters/useFlightSearchFilters';
 
-export default function FlightSearch() {
-  const { error, flights } = useFetchFlightResults();
-  const paginatedFlights = flights.slice(0, 10);
-
+export default function FlightSearchIndex() {
+  // All of flight search is wrapped in the FilterContext provider
+  // which holds onto the state of the filters and sorting.
+  const flightSearchFilters = useFlightSearchFilters();
   return (
-    <>
-      <div className="row">
-        <div className="pane m-t-1">
-          <div className="pane-header search-results__header">
-            <div className="search-results__title">
-              <b>Select an outbound flight</b>
-              <p className="m-v-0 fade small">DEN → CHI</p>
-            </div>
-          </div>
-          <FlightSearchList flights={paginatedFlights} />
-        </div>
-        <FlightSearchPagination />
-      </div>
-    </>
+    <FilterContext.Provider value={flightSearchFilters}>
+      <FlightSearch />
+    </FilterContext.Provider>
   );
 }
