@@ -28,6 +28,8 @@ The goal of this code challenge is to implement a sample front-end for one of ou
   - If you would like to complete the challenge in another framework (Angular, Vue, etc.), you're welcome to do so, however you will be responsible for duplicating the code challenge in that framework prior to arriving at the interview.
   - Don't worry if you're not confident in Backbone/Marionette or React - We will gladly help you through framework related questions and your knowledge of a framework will not necessarily count against you and a lot of the following challenges are more focused on your knowledge of Javascript rather than a specific framework.
 
+Getting an error with the node sass module? See https://github.com/sass/node-sass/issues/2536
+
 #### Core Requirements
 
 - Work through this project according to the instructions page (this page will be the first thing that loads when the project builds)
