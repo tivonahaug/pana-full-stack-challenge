@@ -1,9 +1,7 @@
 export const SortByEnum = {
   BEST: 'BEST',
   PRICE_LOW: 'PRICE_LOW',
-  PRICE_HIGH: 'PRICE_HIGH',
-  TIME_OF_DAY_ASC: 'TIME_OF_DAY_ASC',
-  TIME_OF_DAY_DESC: 'TIME_OF_DAY_DESC',
+  TIME_OF_DAY: 'TIME_OF_DAY',
 };
 
 // <Select /> component options need to have
@@ -18,15 +16,9 @@ export const SortByOptions = [
     label: 'Price (low)',
   },
   {
-    value: SortByEnum.PRICE_HIGH,
-    label: 'Price (high)',
-  },
-  {
-    value: SortByEnum.TIME_OF_DAY_ASC,
-    label: 'Time of Day (earlier)',
-  },
-  {
-    value: SortByEnum.TIME_OF_DAY_DESC,
-    label: 'Time of Day (later)',
+    value: SortByEnum.TIME_OF_DAY,
+    label: 'Time of Day',
   },
 ];
+
+export const SortByDefaultOption = SortByOptions[0];

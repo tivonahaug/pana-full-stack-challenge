@@ -7,10 +7,8 @@ export default [
       <span>
         The first step is to allow the user to Sort by various criteria. You
         should be able to sort by <strong>Best</strong>,{' '}
-        <strong>Price (High)</strong>, and <strong>Price (low)</strong>,
-        <strong>Time of Day (earlier)</strong>,{' '}
-        <strong>Time of Day (later)</strong>. We've already built out the
-        dropdown component for you and hooked it up to a context provider,
+        <strong>Price (low)</strong>, <strong>Time of Day (earlier)</strong>.
+        We've already built out the dropdown component and hooked it up for you,
         you'll just need to implement the logic that sorts the results when the
         dropdown changes. You're welcome to implement the actual sorting on the
         backend or the frontend.
@@ -20,9 +18,7 @@ export default [
       `The flight results come pre-sorted by Best`,
       `Sorting by Best should sort results by the "score" property. The lower the score, the better the flight.`,
       `Sorting by Price (low) should sort results by price in ascending order.`,
-      `Sorting by Price (high) should sort results by price in descending order.`,
-      `Sorting by Time of Day (earlier) should sort results from the earliest departure to the latest departure.`,
-      `Sorting by Time of Day (later) should sort results from the latest departure to the earliest departure.`,
+      `Sorting by Time of Day should sort results from the earliest departure to the latest departure.`,
     ],
   },
   {
@@ -45,6 +41,31 @@ export default [
     ],
   },
   {
+    title: 'Tests',
+    subtext: (
+      <span>
+        At Pana, all Pull Requests must have at least 50% code coverage before
+        we merge them into master, however we aim to get closer to 100%. Using{' '}
+        <a href="https://jestjs.io/">Jest</a>, you'll need to write some unit
+        tests that prove the functionality you just built out. On both the
+        frontend and backend, Jest is configured to pick up any test files that
+        live in a <i className="fade">__tests__</i> directory anywhere in the
+        project, or any files that end with
+        <i className="fade">*.test.js</i>.
+        <p>
+          Your goal should be to aim for 100% code coverage here - What happens
+          if bad data is passed in? How do you think about error handling? What
+          happens if the flight data is missing info or is corrupt? What else
+          can unit tests help with?
+        </p>
+      </span>
+    ),
+    criteria: [
+      `Write unit tests for your sorting methods - You should have a unit tests for Sort By Best, Price (low), and Time of Day.`,
+      `Write unit tests for any methods that you wrote while writing pagination - For example, you should be able to prove that Previous Page doesn't decrement to negative numbers, etc...`,
+    ],
+  },
+  {
     title: 'Filter By Time of Day Presets',
     subtext: (
       <span>
@@ -63,7 +84,7 @@ export default [
         <span>The presets should be implemented as follows:</span>
         <ul>
           <li>
-            Morning should filter results departing between 6:00am and 11:59am
+            Morning should filter results departing between 6:00am and 11:59am.
           </li>
           <li>
             Afternoon should filter results departing between 12:00pm and

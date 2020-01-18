@@ -50,6 +50,32 @@ export default function Instructions() {
           free to take the first few minutes of the interview converting the
           fetch functionality to a <i className="fade">class</i>.
         </p>
+        <h4>Documentation</h4>
+        <ul>
+          <li>
+            <a href="https://github.com/JedWatson/react-select">
+              React {'<Select />'} (dropdown component)
+            </a>
+          </li>
+          <li>
+            <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a>
+          </li>
+          <li>
+            <a href="https://reactjs.org/docs/hooks-reference.html#usecontext">
+              React Hooks with Context
+            </a>
+          </li>
+          <li>
+            <a href="https://momentjs.com/docs/">Moment</a>
+          </li>
+          <li>
+            <a href="https://jestjs.io/">Jest Unit Tests</a>
+          </li>
+          <li>
+            Feel free to Google Search anything else you may need, this is not a
+            memory challenge.
+          </li>
+        </ul>
       </div>
       <div className="col-xs-12 m-t-2">
         <h2 className="m-b-1">The Challenge</h2>
