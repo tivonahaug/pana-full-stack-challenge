@@ -14,7 +14,7 @@ The goal of this code challenge is to implement a sample front-end for one of ou
 
 - **React Version**
 
-  - Located in `/backbone`
+  - Located in `/react-challenge`
   - `$ yarn install` or `$ npm install`
   - `$ yarn start` or `$ npm start`
 
