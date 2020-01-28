@@ -2,32 +2,39 @@
 
 ### The Challenge
 
-Using the included API server and your code wizardry, the goal is to implement a sample front-end for one of our products, **Pana Flight Search**, using Backbone/Marionette (_or another similar framework_).
-
-### Requirements
+The goal of this code challenge is to implement a sample front-end for one of our products, **Pana Flight Search**, using either React or Backbone/Marionette (_or another similar framework_). Further instructions will be presented when you first build the project.
 
 ### Installation
 
-- Install the project and open `http://localhost:3041/instructions`
-
-- **Client**
-  - Located in `/client`
-  - `$ npm install`
-  - `$ npm run dev` to start the dev server
-  - If you want to use a custom build or another framework, just make sure it lives in this directory.
 - **API**
+
   - Located in `/server`
   - `$ npm install`
-  - `$ npm start`
+  - `$ nodemon` (for hot loading rebuilds) or `$ npm start`
+
+- **React Version**
+
+  - Located in `/react-challenge`
+  - `$ yarn install` or `$ npm install`
+  - `$ yarn start` or `$ npm start`
+
+- **Backbone / Marionette Version**
+
+  - Located in `/backbone`
+  - `$ npm install`
+  - `$ npm run dev` to start the dev server
+
+- **Another Framework**
+  - If you would like to complete the challenge in another framework (Angular, Vue, etc.), you're welcome to do so, however you will be responsible for duplicating the code challenge in that framework prior to arriving at the interview.
+  - Don't worry if you're not confident in Backbone/Marionette or React - We will gladly help you through framework related questions and your knowledge of a framework will not necessarily count against you and a lot of the following challenges are more focused on your knowledge of Javascript rather than a specific framework.
 
 Getting an error with the node sass module? See https://github.com/sass/node-sass/issues/2536
 
 #### Core Requirements
 
-- Work through this project according to the instructions located in `views/instructions/layout` (after installing and running the project, the instructions will be the first thing you see).
-- Use Backbone/Marionette or another frontend JS framework
-  - We have provided a boilerplate Backbone/Marionette project in the client directory (see _installation_ below), however, if you would like to use a different framework (React, Vue, Angular, or even vanilla JS), you're more than welcome to.
-  - **If you choose to use a different framework**, you _must_ build out the project in that framework prior to coming in for your in-person code challenge. Part of our goal is to see how you work through problems including fetching from an api, interpreting unfamiliar data, and reasoning about sorting and filter. If your non-Backbone project is not ready to do these things for the code challenge, you'll be asked to complete the challenge in Backbone and Marionette.
+- Work through this project according to the instructions page (this page will be the first thing that loads when the project builds)
+- Use React, Backbone/Marionette, or another frontend JS framework
+  - Part of our goal is to see how you work through problems including fetching from an api, interpreting unfamiliar data, and reasoning about sorting and filter, not necessarily how well you know certain frameworks.
 
 ### Evaluation
 
@@ -41,8 +48,6 @@ Getting an error with the node sass module? See https://github.com/sass/node-sas
   - Clear knowledge of Javascript fundamentals and patterns
   - How you take unfamiliar data and understand it
   - How you handle unexpected errors and loading times
-- **CSS** _(if you choose to complete any extra credit)_
-  - How well you implement your styles including reusability and organization
 
 ### Styleguide
 

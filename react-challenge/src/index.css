@@ -1,13 +1,108 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Open+Sans:400,700&display=swap');
+
+:root {
+  --border-color: #eaeaea;
+  --border-radius: 3px;
+  --primary-color: #1a96fc;
+}
+
+body,
+.btn {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  font-size-adjust: 0.5;
+  line-height: 1.5;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  margin-left: 7px;
+  margin-right: 7px;
+  background-color: #cccccc;
+  padding: 4px;
+  border-radius: var(--border-radius);
+  font-family: 'Fira Code', monospace;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+a.hover {
+  opacity: 0.8;
+}
+
+p.small,
+span.small,
+b.small {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: 700;
+}
+
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.pane {
+  border: solid 1px var(--border-color);
+  width: 100%;
+}
+
+.pane .pane-header {
+  border-bottom: solid 1px var(--border-color);
+  padding: 0.5em;
+}
+
+.fade {
+  opacity: 0.6;
 }
