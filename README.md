@@ -1,8 +1,16 @@
-## Pana Full-Stack Code Challenge
+## Coupa Travel Full-Stack Code Challenge
 
 ### The Challenge
 
-The goal of this code challenge is to implement a sample front-end for one of our products, **Pana Flight Search**, using either React or Backbone/Marionette (_or another similar framework_). Further instructions will be presented when you first build the project.
+The goal of this code challenge is to contribute to a sample front-end for one of our products, **Coupa Travel Flight Search**, using React.
+You have received this at least a day before your technical interview. We expect you to spend around 30min - 1 hour familiarizing yourself with the code, and installing and running the app. Any time spent setting up the project during the interview will take away from time we have to actually solve the challenge.
+
+Once you have the app up and running, you'll be presented with the challenge prompt. If you **want**, you may start implementing the changes requested in the challenge prompt. However, if you prefer to live code your solutions during the interview, that is completely fine. **Choosing not to start on the challenge will absolutely not count against your performance in the interview.** All we ask is that you familiarize yourself with the code prior to the interview.
+
+**Another Framework**
+
+- If you would like to complete the challenge in another framework (Angular, Vue, etc.), you're welcome to do so, however you will be responsible for duplicating the code challenge in that framework prior to arriving at the interview. You do not need to replicate the React app down to the pixel - a rough implementation is fine.
+- Don't worry if you're not confident in React - We will gladly help you through framework related questions and your knowledge of a framework will not necessarily count against you and a lot of the following challenges are more focused on your knowledge of Javascript rather than a specific framework.
 
 ### Installation
 
@@ -12,28 +20,18 @@ The goal of this code challenge is to implement a sample front-end for one of ou
   - `$ npm install`
   - `$ nodemon` (for hot loading rebuilds) or `$ npm start`
 
-- **React Version**
+- **UI**
 
   - Located in `/react-challenge`
   - `$ yarn install` or `$ npm install`
   - `$ yarn start` or `$ npm start`
-
-- **Backbone / Marionette Version**
-
-  - Located in `/backbone`
-  - `$ npm install`
-  - `$ npm run dev` to start the dev server
-
-- **Another Framework**
-  - If you would like to complete the challenge in another framework (Angular, Vue, etc.), you're welcome to do so, however you will be responsible for duplicating the code challenge in that framework prior to arriving at the interview.
-  - Don't worry if you're not confident in Backbone/Marionette or React - We will gladly help you through framework related questions and your knowledge of a framework will not necessarily count against you and a lot of the following challenges are more focused on your knowledge of Javascript rather than a specific framework.
 
 Getting an error with the node sass module? See https://github.com/sass/node-sass/issues/2536
 
 #### Core Requirements
 
 - Work through this project according to the instructions page (this page will be the first thing that loads when the project builds)
-- Use React, Backbone/Marionette, or another frontend JS framework
+- Use React or another frontend JS framework
   - Part of our goal is to see how you work through problems including fetching from an api, interpreting unfamiliar data, and reasoning about sorting and filter, not necessarily how well you know certain frameworks.
 
 ### Evaluation

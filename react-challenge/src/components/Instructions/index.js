@@ -35,14 +35,6 @@ export default function Instructions() {
           your decisions, and walk us through how you're implementing various
           parts of the challenge. We want to know what you're thinking.
         </p>
-        <h4>Frontend or Backend</h4>
-        <p>
-          You are welcome to complete any parts of the challenge on either the
-          front-end or the backend <i className="fade">(located in /server)</i>.
-          Your decision on where to implement these features will not be counted
-          against you in this challenge, however each challenge will compound
-          off of it's predecessor, so choose wisely.
-        </p>
         <h4>React Hooks vs Class Components</h4>
         <p>
           We've written this challenge using React's hooks API, however if
